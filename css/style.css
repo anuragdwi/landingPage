@@ -84,7 +84,7 @@ section.hero {
 section.hero svg {
   stroke: white;
   position: absolute;
-  bottom: 2em;
+  bottom: 6em;
   width: 1em;
 }
 section.hero svg path {
@@ -220,7 +220,7 @@ section.hero svg path {
 }
 @-webkit-keyframes downArr {
   from {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   to {
     transform: translateY(0px);
@@ -228,7 +228,7 @@ section.hero svg path {
 }
 @keyframes downArr {
   from {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   to {
     transform: translateY(0px);

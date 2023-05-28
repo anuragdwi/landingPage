@@ -76,7 +76,7 @@ section.hero {
   svg {
     stroke: white;
     position: absolute;
-    bottom: 2em;
+    bottom: 6em;
     width: 1em;
     path {
       fill: white;
@@ -199,7 +199,7 @@ section.hero {
 }
 @keyframes downArr {
   from {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   to {
     transform: translateY(-0px);
