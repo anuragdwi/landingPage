@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
-  margin: 1.5em;
+  margin: 0;
+  padding: 0;
   font-family: "Poppins";
 }
 
@@ -74,9 +75,13 @@ h1 {
   font-size: 1.4rem;
 }
 
+.wrapper {
+  padding: 1.5em;
+}
+
 section.hero {
   color: #fff;
-  height: 90vh;
+  height: 80vh;
   -webkit-animation: moveDown 1s ease-in-out forwards;
           animation: moveDown 1s ease-in-out forwards;
   opacity: 0;
@@ -97,6 +102,9 @@ section.hero svg path {
   cursor: pointer;
 }
 
+.info {
+  margin-bottom: 2em;
+}
 .info img {
   width: 100%;
   -o-object-fit: cover;
@@ -111,14 +119,142 @@ section.hero svg path {
   line-height: 1.5rem;
 }
 
+.select {
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+}
+.select .man {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48%;
+  background: url("../asset/shopMen.jpg") center center/cover;
+}
+.select .woman {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48%;
+  background: url("../asset/shopWomen.jpg") center center/cover;
+}
+.select .shopCta {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: 2px solid white;
+  padding: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #fff;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.select .shopCta:before, .select .shopCta:after,
+.select .shopCta span:before,
+.select .shopCta span:after {
+  transition: 0.3s ease-in-out;
+}
+.select .shopCta:hover {
+  letter-spacing: 0.5px;
+}
+.select .shopCta:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 rgba(255, 255, 255, 0.5), 9px 9px 0 rgba(255, 255, 255, 0.5), 8px 8px 0 rgba(255, 255, 255, 0.5), 7px 7px 0 rgba(255, 255, 255, 0.5), 6px 6px 0 rgba(255, 255, 255, 0.5), 5px 5px 0 rgba(255, 255, 255, 0.5), 4px 4px 0 rgba(255, 255, 255, 0.5), 3px 3px 0 rgba(255, 255, 255, 0.5), 2px 2px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.subscribe {
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  background: #44c6e6;
+}
+.subscribe .subLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1em;
+}
+.subscribe .subLeft .email {
+  padding: 0.8em 12px;
+  border-radius: 1.6em;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.subscribe .subLeft button {
+  cursor: pointer;
+  padding: 0.6em 1.6em;
+  border-radius: 1.6em;
+  outline: none;
+  border: none;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  background: #fff;
+  color: #111;
+}
+
+.footer {
+  position: relative;
+  height: 20vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1.2em 2em;
+  background: #262b2f;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+}
+.footer .logo {
+  color: #fff;
+}
+.footer .logo span {
+  color: #fff;
+}
+.footer .socilalinks {
+  display: flex;
+  gap: 1em;
+}
+.footer .socilalinks i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.footer .socilalinks i:hover {
+  color: #44c6e6;
+}
+.footer .socilalinks i:nth-child(1):hover {
+  color: #f09433;
+}
+.footer .socilalinks i:nth-child(2):hover {
+  color: #3b5998;
+}
+
 @media only screen and (min-width: 680px) {
   body {
-    margin: 1.5em 5em;
+    margin: 1.5em 0em 0em 0em;
+  }
+  .wrapper {
+    margin: 0 5em;
   }
 }
 @media only screen and (min-width: 920px) {
   .open {
     display: none;
+  }
+  header {
+    margin: 0 5em;
   }
   nav {
     transform: translateX(0);
@@ -191,6 +327,47 @@ section.hero svg path {
   .feature:nth-child(2) .col-1 {
     width: 25em;
     text-align: left;
+  }
+  .select {
+    height: 80vh;
+    display: flex;
+    margin-bottom: 4em;
+  }
+  .select .man {
+    width: 48%;
+    height: 100%;
+  }
+  .select .woman {
+    width: 48%;
+    height: 100%;
+  }
+  .subscribe {
+    justify-content: space-between;
+  }
+  .subscribe {
+    flex-wrap: nowrap;
+  }
+  .subscribe .subRight {
+    width: 60%;
+  }
+  .subscribe .subRight {
+    width: 60%;
+  }
+  .subscribe .subLeft {
+    width: 35%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  .subscribe .subLeft .email {
+    padding: 0.4em 1.2em;
+  }
+  .subscribe .subLeft button {
+    padding: 0.4em 1.2em;
+  }
+  .footer {
+    justify-content: space-between;
+    padding: 0 5em;
   }
 }
 .downArrow {
